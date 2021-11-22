@@ -1,0 +1,12 @@
+.dashboard {
+  display: flex;
+  align-items: center;
+  color: #5a5959;
+  font-family: "Kanit" "Oxygen" sans-serif;
+  font-weight: 400;
+}
+#basic-button {
+  font-family: "Kanit" sans-serif;
+  font-weight: 600;
+  color: var(--color-text-body);
+}
