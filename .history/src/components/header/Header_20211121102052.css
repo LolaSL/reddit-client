@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 27px;
+  font-family: "Kanit", Courier, sans-serif;
+  background-color: aliceblue;
+}
+
+/* @media only screen and (max-width: 960px) {
+  .header {
+    height: 6vh;
+    align-items: center;
+  }
+
+  .title {
+    left: 6rem;
+  }
+
+  .header-title {
+    font-size: 2rem;
+  }
+
+  .logo {
+    height: 55%;
+  }
+  .searchbar {
+    height: auto;
+    width: auto;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .header {
+    height: 4vh;
+    align-items: center;
+  }
+
+  .title {
+    left: 4rem;
+  }
+
+  .header-title {
+    font-size: 1rem;
+  }
+
+  .logo {
+    height: 45%;
+  }
+  .searchbar {
+    height: auto;
+    width: auto;
+  }
+} */

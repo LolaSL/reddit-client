@@ -1,0 +1,12 @@
+:root {
+  --border-radius: 5px;
+  --primary-color: #157a8e;
+}
+body {
+  background-color: rgb(206, 214, 223);
+  margin: 0;
+}
+
+.hoverable:hover {
+  cursor: pointer;
+}

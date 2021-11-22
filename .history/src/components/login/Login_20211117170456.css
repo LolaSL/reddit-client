@@ -1,0 +1,11 @@
+.login {
+  display: flex;
+  align-items: center;
+  color: #5a5959;
+}
+.profile:hover {
+  border: 1px solid #5a5959;
+}
+.profile svg:first-child {
+  margin-right: 10px;
+}

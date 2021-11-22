@@ -1,0 +1,12 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: aliceblue;
+  padding: 50px;
+  z-index: 1000;
+}
+#btn {
+  width: 40px;
+}

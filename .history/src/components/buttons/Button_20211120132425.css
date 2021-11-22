@@ -1,0 +1,35 @@
+.button {
+  padding: 7px 30px;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  font-size: 12px;
+  font-family: "Kanit" sans-serif;
+}
+
+.primary-button {
+  color: white;
+  background-color: var(--primary-color);
+  font-family: "Kanit" sans-serif;
+}
+.secondary-button {
+  color: white;
+  text-transform: uppercase;
+  background-color: var(--primary-color);
+  font-family: "Kanit" sans-serif;
+}
+.primary-button:hover {
+  background-color: lightskyblue;
+  border: 1px solid lightskyblue;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Kanit" sans-serif;
+}
+.secondary-button:hover {
+  border: 1px solid lightskyblue;
+  color: darkblue;
+  text-transform: uppercase;
+  font-family: "Kanit" sans-serif;
+}
+button:hover {
+  cursor: pointer;
+}

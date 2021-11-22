@@ -1,0 +1,23 @@
+.searchbar input {
+  width: 500px;
+  padding: 10px;
+  padding-left: 40px;
+  border-radius: var(--border-radius);
+  border: 1px solid hsl(263, 6%, 43%);
+  background-color: #e7e4e4;
+}
+.searchbar {
+  position: relative;
+}
+
+.searchbar label {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  height: 100%;
+  margin-left: 15px;
+  margin-bottom: 40px;
+}
+.searchbar label svg {
+  color: #a19b9b;
+}

@@ -1,0 +1,11 @@
+.button {
+  padding: 5px 25px;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius);
+}
+.primary-button {
+  color: white;
+}
+.secondary-button {
+  color: var(--primary-color);
+}

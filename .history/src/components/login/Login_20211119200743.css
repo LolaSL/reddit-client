@@ -1,0 +1,27 @@
+.login {
+  display: flex;
+  align-items: center;
+  color: #5a5959;
+}
+.profile:hover {
+  border: 1px solid #5a5959;
+}
+.profile svg {
+  margin-right: 10px;
+}
+.profile {
+  border: 1px solid transparent;
+  border-radius: var(--border-radius);
+}
+.login div:nth-child(2) {
+  margin: 0 15px;
+}
+form {
+  display: flexbox;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+.modal {
+  width: 250px;
+}

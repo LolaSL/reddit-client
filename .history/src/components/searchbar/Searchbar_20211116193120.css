@@ -1,0 +1,7 @@
+.searchbar input{
+    width: 450px;
+    padding: 9px;
+    border-radius: var(--border-radius);
+    border: 1px solid lightgrey;
+    background-color: ;
+}

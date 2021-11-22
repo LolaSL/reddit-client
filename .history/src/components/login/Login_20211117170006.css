@@ -1,0 +1,7 @@
+.login {
+  display: flex;
+  align-items: center;
+}
+.profile svg:first-child {
+  margin-right: 10px;
+}

@@ -1,0 +1,8 @@
+.login {
+  display: flex;
+  align-items: center;
+  color: #a19b9b;
+}
+.profile svg:first-child {
+  margin-right: 10px;
+}

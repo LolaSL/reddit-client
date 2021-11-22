@@ -1,0 +1,39 @@
+import React, { useState, useEffect } from 'react';
+import './Searchbar.css';
+import SearchIcon from '@mui/icons-material/Search';
+import { useDispatch, useSelector } from 'react-redux';
+import { setSearchTerm } from '../../store/redditSlice';
+
+const Searchbar = () => {
+    const [searchTermLocal, setSearchTermLocal] = useState('');
+    const searchTerm = useSelector((state) => state.reddit.searchTerm);
+    const dispatch = useDispatch();
+    const onSearchTermChange = (e) => {
+        setSearchTermLocal(e.target.value);
+    };
+
+    useEffect(() => {
+        setSearchTermLocal(searchTerm);
+    }, [searchTerm]);
+
+    const onSearchTermSubmit = (e) => {
+        e.preventDefault();
+        dispatch(setSearchTerm(searchTermLocal));
+    };
+
+    return (
+        <div className="searchbar">
+            <input
+                type="text"
+                id="searchbar"
+                placeholder="Search"
+                value={searchTermLocal}
+                onChange={onSearchTermChange} />
+
+            <label htmlFor="searchbar">
+                <SearchIcon type="submit" onClick={onSearchTermSubmit} /></label>
+        </div>
+    )
+}
+
+export default Searchbar;
