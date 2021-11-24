@@ -5,8 +5,8 @@
 }
 
 .logo img {
-  max-width: 40px;
-  max-height: 40px;
+  width: 40px;
+  height: 40px;
   margin-right: 7px;
 }
 
@@ -18,22 +18,14 @@
 }
 @media only screen and (max-width: 500px) and (max-height) {
   img {
-    width: 70%;
+    width: 20px;
     height: auto;
-    margin-right: auto;
-  }
-  #header-title {
-    font-size: 14px;
   }
 }
 
 @media only screen and (max-width: 960px) and (max-height) {
   article {
-    width: 100%;
+    width: 35px;
     height: auto;
-    margin-right: auto;
-  }
-  #header-title {
-    font-size: 16px;
   }
 }

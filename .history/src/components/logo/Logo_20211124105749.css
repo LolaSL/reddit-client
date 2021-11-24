@@ -18,9 +18,9 @@
 }
 @media only screen and (max-width: 500px) and (max-height) {
   img {
-    width: 70%;
-    height: auto;
-    margin-right: auto;
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
   }
   #header-title {
     font-size: 14px;
@@ -29,9 +29,9 @@
 
 @media only screen and (max-width: 960px) and (max-height) {
   article {
-    width: 100%;
-    height: auto;
-    margin-right: auto;
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
   }
   #header-title {
     font-size: 16px;
