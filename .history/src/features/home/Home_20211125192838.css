@@ -1,0 +1,29 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kanit", Courier, sans-serif;
+}
+
+.error button {
+  color: var(--color-text-body);
+  border: none;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  padding: var(--spacing-2) var(--spacing-4);
+  cursor: pointer;
+  font-family: "Kanit", Courier, sans-serif;
+  font-weight: 600;
+}
+
+.error button:hover {
+  font-family: "Kanit", Courier, sans-serif;
+  font-weight: 600;
+  background-color: var(--color-text-secondary);
+  color: var(--color-text-invert);
+}
+.error h2 {
+  color: OrangeRed;
+}

@@ -1,0 +1,39 @@
+.dashboard {
+  display: flex;
+  align-items: center;
+  color: #5a5959;
+  font-weight: 500;
+}
+#basic-button,
+#close-button,
+#login-button {
+  font-family: "Kanit", Courier, sans-serif;
+  font-weight: 600;
+  color: var(--color-text-body);
+}
+
+#close-button {
+  display: flex;
+  text-align: center;
+}
+
+#basic-button:hover {
+  font-family: "Kanit", Courier, sans-serif;
+  font-weight: 600;
+  background-color: var(--color-text-secondary);
+  color: var(--color-text-invert);
+}
+
+#close-button:hover {
+  font-family: "Kanit", Courier, sans-serif;
+  font-weight: 600;
+  background-color: var(--color-text-secondary);
+  color: var(--color-text-invert);
+}
+
+#login-button:hover {
+  font-family: "Kanit", Courier, sans-serif;
+  font-weight: 600;
+  background-color: var(--color-text-secondary);
+  color: var(--color-text-invert);
+}

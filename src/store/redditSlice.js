@@ -81,7 +81,7 @@ export const fetchPosts = (subreddit) => async (dispatch) => {
     dispatch(startGetPosts());
     const posts = await getSubredditPosts(subreddit);
 
-    // Adding showingComments and comments as additional fields to handle showing them when the user wants to. We need to do this because we need to call another API endpoint to get the comments for each post.
+    // We are adding showingComments and comments as additional fields to handle showing them when the user wants to. We need to do this because we need to call another API endpoint to get the comments for each post.
     const postsWithMetadata = posts.map((post) => ({
       ...post,
       showingComments: false,
@@ -107,7 +107,8 @@ export const fetchComments = (index, permalink) => async (dispatch) => {
 
 const selectPosts = (state) => state.reddit.posts;
 const selectSearchTerm = (state) => state.reddit.searchTerm;
-export const selectSelectedSubreddit = (state) => state.reddit.selectedSubreddit;
+export const selectSelectedSubreddit = (state) =>
+  state.reddit.selectedSubreddit;
 
 export const selectFilteredPosts = createSelector(
   [selectPosts, selectSearchTerm],
@@ -121,3 +122,4 @@ export const selectFilteredPosts = createSelector(
     return posts;
   }
 );
+

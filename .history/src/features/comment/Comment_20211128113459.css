@@ -1,0 +1,48 @@
+.comment {
+  background: var(--color-background);
+  margin: var(--spacing-0) 0;
+  padding: var(--spacing-1);
+  transition: box-shadow 0.1s ease-in;
+  border-radius: var(--border-radius);
+}
+
+.comment:hover {
+  box-shadow: var(--box-shadow);
+}
+
+.comment-metadata {
+  display: flex;
+  margin-bottom: var(--spacing-1);
+  align-items: center;
+}
+
+.comment-created-time {
+  margin-left: auto;
+  font-style: italic;
+  font-size: larger;
+}
+
+.comment-author {
+  font-weight: bold;
+  color: var(--color-branding);
+  font-size: larger;
+}
+@media only screen and (max-width: 4100px),
+  only screen and (max-device-width: 410px) {
+  .comment-metadata {
+    width: 80%;
+    padding-left: 5px;
+  }
+  .comment-author {
+    font-weight: bold;
+    color: var(--color-branding);
+    font-size: normal;
+    margin-right: 10px;
+  }
+  .comment-created-time {
+    margin-left: auto;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}

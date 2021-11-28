@@ -1,0 +1,42 @@
+.comment {
+  background: var(--color-background);
+  margin: var(--spacing-1) 0;
+  padding: var(--spacing-2);
+  transition: box-shadow 0.1s ease-in;
+  border-radius: var(--border-radius);
+}
+
+.comment:hover {
+  box-shadow: var(--box-shadow);
+}
+
+.comment-metadata {
+  display: flex;
+  margin-bottom: var(--spacing-2);
+  align-items: center;
+}
+
+.comment-created-time {
+  margin-left: auto;
+  font-style: italic;
+}
+
+.comment-author {
+  font-weight: bold;
+  color: var(--color-branding);
+}
+/* @media only screen and (max-width: 500px) and (max-height) {
+  .comment {
+    width: 450px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 960px) and (max-height) {
+  .comment {
+    width: 900px;
+    left: 0rem;
+    margin: 0 auto;
+    height: auto;
+  }
+} */

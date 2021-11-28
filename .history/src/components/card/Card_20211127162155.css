@@ -1,0 +1,30 @@
+.card {
+  background: var(--color-foreground);
+  box-shadow: var(--box-shadow);
+  margin-bottom: var(--spacing-4);
+  border-radius: var(--radius);
+  padding: var(--spacing-3);
+  transition: box-shadow 0.1s ease-in;
+  color: var(--color-text-secondary);
+  font-family: "Kanit", Courier, sans-serif;
+}
+
+.card:hover {
+  box-shadow: var(--box-shadow-hover);
+}
+/* 
+@media only screen and (max-width: 500px) and (max-height) {
+  .card {
+    width: 450px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 960px) and (max-height) {
+  .card {
+    width: 900px;
+    left: 0rem;
+    margin: 0 auto;
+    height: auto;
+  }
+} */

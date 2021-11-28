@@ -1,0 +1,22 @@
+.logout {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Kanit", Courier, sans-serif;
+}
+.logout-button {
+  min-width: 300px;
+  padding: 18px 30px;
+  margin-top: 20px;
+  font-family: "Kanit", Courier, sans-serif;
+  background-color: var(--color-on-hover);
+  border: none;
+  color: var(--color-text-invert);
+  font-size: 14px;
+  border-radius: var(--radius);
+}
+.user-name {
+  color: var(--color-logout);
+}

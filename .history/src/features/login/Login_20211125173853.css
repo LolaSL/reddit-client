@@ -1,0 +1,40 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  font-family: "Kanit", Courier, sans-serif;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+.login-form > h1 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  letter-spacing: -1px;
+}
+.login-form > input {
+  min-width: 380px;
+  padding: 20px 0;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  outline: none;
+  border: 1px solid rgba(48, 46, 46, 0.24);
+  font-family: "Kanit", Courier, sans-serif;
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+.submit-button {
+  padding: 17px;
+  margin-top: 10px;
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-family: "Kanit", Courier, sans-serif;
+  border-radius: 7px;
+}
