@@ -3,15 +3,15 @@ import moment from 'moment';
 import ReactMarkdown from 'react-markdown';
 import './Comment.css';
 import Avatar from '../avatar/Avatar';
-import remarkGfm from 'remark-gfm';
+import remarkGfm from 'remark-gfm'
 
 
 
 
 
 const Comment = (props) => {
+    const markdown = `comment.body`
     const { comment } = props;
-    const markdown = comment.body;
     return (
         <div className="comment">
             <div className="comment-metadata">
