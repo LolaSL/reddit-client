@@ -1,0 +1,60 @@
+.logout {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 45vh;
+  font-family: "Kanit", Courier, sans-serif;
+  margin: 15px;
+}
+
+.user-name {
+  color: var(--color-logout);
+}
+.logout-button {
+  padding: 15px;
+  margin: 15px;
+  border: none;
+  color: var(--color-text-body);
+  font-family: "Kanit", Courier, sans-serif;
+  border-radius: var(--radius);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.logout-button:hover {
+  font-family: "Kanit", Courier, sans-serif;
+  font-weight: 700;
+  background-color: var(--color-text-secondary);
+  color: var(--color-text-invert);
+}
+span {
+  text-transform: uppercase;
+}
+p {
+  font-size: large;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+@media only screen and (max-width: 768px) {
+  .logout {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 20px;
+    font-family: "Kanit", Courier, sans-serif;
+    margin: 20px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .logout {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 30px;
+    font-family: "Kanit", Courier, sans-serif;
+    margin: 20px 20px;
+    padding: 15px 20px;
+  }
+}

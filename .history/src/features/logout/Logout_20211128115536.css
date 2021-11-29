@@ -1,0 +1,33 @@
+.logout {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 45vh;
+  font-family: "Kanit", Courier, sans-serif;
+}
+
+.user-name {
+  color: var(--color-logout);
+}
+.logout-button {
+  padding: 15px;
+  margin-top: 10px;
+  border: none;
+  color: var(--color-text-body);
+  font-family: "Kanit", Courier, sans-serif;
+  border-radius: var(--radius);
+  font-weight: 600;
+}
+.logout-button:hover {
+  font-family: "Kanit", Courier, sans-serif;
+  font-weight: 700;
+  background-color: var(--color-text-secondary);
+  color: var(--color-text-invert);
+}
+
+/* @media  only screen and (max-width: 480px) {
+  .logout h1 {
+    display: none;
+  }
+} */
