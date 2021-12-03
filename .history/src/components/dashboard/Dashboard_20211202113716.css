@@ -1,0 +1,43 @@
+.dashboard {
+  display: flex;
+  align-items: center;
+  color: var(--color-button);
+  font-weight: normal;
+  margin: 0 var(--spacing-2);
+}
+#basic-menu {
+  display: block;
+}
+#basic-button,
+#close-button,
+#login-button {
+  font-family: "Kanit", Courier, sans-serif;
+  font-weight: 600;
+  color: var(--color-text-body);
+}
+
+#close-button {
+  display: block;
+  margin: var(--spacing-2) auto;
+}
+
+#basic-button:hover {
+  font-family: "Kanit", Courier, sans-serif;
+  font-weight: 600;
+  background-color: var(--color-text-secondary);
+  color: var(--color-text-invert);
+}
+
+#close-button:hover {
+  font-family: "Kanit", Courier, sans-serif;
+  font-weight: 600;
+  background-color: var(--color-text-secondary);
+  color: var(--color-text-invert);
+}
+
+#login-button:hover {
+  font-family: "Kanit", Courier, sans-serif;
+  font-weight: 600;
+  background-color: var(--color-text-secondary);
+  color: var(--color-text-invert);
+}

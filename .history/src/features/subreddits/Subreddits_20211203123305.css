@@ -1,0 +1,85 @@
+body .subreddit-card {
+  padding-right: var(--spacing-2);
+  height: 100%;
+  width: 23%;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  overflow-y: scroll;
+  padding-top: var(--spacing-2);
+  margin-top: 5.4rem;
+  overflow-y: scroll;
+  font-family: "Kanit", Courier, sans-serif;
+  font-size: var(--spacing-3);
+}
+#main {
+  display: block;
+  height: 100%;
+  width: 20%;
+}
+.subreddit-card h2 {
+  margin-top: 0 auto;
+  color: var(--color-text-header);
+  font-weight: bold;
+}
+
+.subreddit-card button {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  color: var(--color-text-body);
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+  padding: var(--spacing-2);
+  border-radius: var(--radius);
+  font-family: "Kanit", Courier, sans-serif;
+  font-size: var(--spacing-2);
+}
+
+.selected-subreddit button {
+  color: var(--color-branding) !important;
+  font-family: "Kanit", Courier, sans-serif;
+}
+
+.selected-subreddit {
+  border-left: var(--spacing-0) solid var(--color-branding);
+  background: var(--color-branding-transparent);
+  font-family: "Kanit", Courier, sans-serif;
+}
+
+.subreddit-card button:hover {
+  background: var(--color-on-hover);
+}
+
+.subreddits-list {
+  list-style: none;
+  padding: 0;
+  font-family: "Kanit", Courier, sans-serif;
+}
+
+.subreddit-icon {
+  height: var(--spacing-3);
+  width: var(--spacing-3);
+  border-radius: 50%;
+  margin-right: var(--spacing-1);
+}
+
+@media only screen and (max-width: 768px) {
+  .subreddit-card {
+    display: none;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  body.subreddit-card {
+    width: 95%;
+    /* font-size: 18px;
+    font-size: 18px; */
+  }
+
+  .subreddit-card button {
+    width: 90%;
+  }
+}

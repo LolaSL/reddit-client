@@ -1,0 +1,116 @@
+.comment {
+  background: var(--color-background);
+  margin: var(--spacing-2) var(--spacing-2);
+  padding: var(--spacing-2) var(--spacing-2);
+  transition: box-shadow 0.1s ease-in;
+  border-radius: var(--border-radius);
+  min-width: 70%;
+}
+.comment:hover {
+  box-shadow: var(--box-shadow);
+}
+.comment-metadata {
+  display: flex;
+  margin: var(--spacing-1);
+  align-items: center;
+  justify-items: center;
+}
+.comment-created-time {
+  margin-left: auto;
+  font-style: italic;
+  font-size: larger;
+  float: left;
+}
+.comment-author {
+  font-weight: bold;
+  color: var(--color-branding);
+  font-size: larger;
+}
+#comment-body {
+  padding: var(--spacing-2) var(--spacing-2);
+  margin: var(--spacing-3);
+  font-size: var(--spacing-2);
+  word-break: break-all;
+  white-space: pre-wrap;
+}
+#comment-body.a {
+  word-break: break-all;
+  white-space: pre-wrap;
+}
+@media only screen and (max-width: 411px) {
+  .comment-metadata {
+    width: 85%;
+    padding-left: var(--spacing-1);
+  }
+  .comment-author {
+    font-weight: bold;
+    color: var(--color-branding);
+    font-size: normal;
+    margin-right: var(--spacing-2);
+  }
+  .comment-created-time {
+    float: right;
+    font-style: italic;
+    font-size: var(--spacing-2);
+    font-weight: 600;
+    margin-left: 0 auto;
+  }
+  #comment-body {
+    word-break: break-all;
+    white-space: pre-wrap;
+  }
+  #comment-body.a {
+    word-break: break-all;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .comment-metadata {
+    width: 90%;
+    padding-left: var(--spacing-1);
+    display: inline-flex;
+    justify-content: space-between;
+    margin: var(--spacing-2);
+  }
+  .comment-author {
+    font-weight: bold;
+    color: var(--color-branding);
+    font-size: var(--spacing-2);
+    margin: var(--spacing-1);
+    position: absolute;
+  }
+  .comment-created-time {
+    margin-left: 0 auto;
+    font-style: italic;
+    font-size: var(--spacing-2);
+    font-weight: 600;
+  }
+  #comment-body {
+    word-break: break-all;
+    white-space: pre-wrap;
+  }
+  #comment-body.a {
+    word-break: break-all;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .comment-metadata {
+    width: 95%;
+    padding-left: var(--spacing-2);
+    display: inline-flex;
+    justify-content: space-between;
+    margin: var(--spacing-3);
+  }
+  .comment-author {
+    font-weight: bold;
+    color: var(--color-branding);
+    font-size: var(--spacing-2);
+    margin: var(--spacing-2);
+    padding-left: auto;
+  }
+  .comment-created-time {
+    margin-left: 0;
+    font-style: italic;
+    font-size: var(--spacing-1);
+    font-weight: 600;
+  }
+}
