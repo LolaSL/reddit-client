@@ -52,18 +52,23 @@ export default function Dashboard() {
                 <MenuItem
                     onClick={handleClose}
                     component="a"
+                    href="https://www.reddit.com/"
+                    target="_blank"
+                    rel="noopener noreferrer">Reddit</MenuItem>
+                <MenuItem
+                    onClick={handleClose}
+                    component="a"
                     href="https://www.linkedin.com/in/lola-s-2aba6340"
                     target="_blank"
                     rel="noopener noreferrer">Linkedin</MenuItem>
                 <MenuItem
                     onClick={handleClose}
                     component="a"
-                    href="https://www.reddit.com/"
+                    href="https://google.com"
+                    mailto="mailto:mail-example@gmail.com"
                     target="_blank"
-                    rel="noopener noreferrer">Reddit</MenuItem>
+                    rel="noopener noreferrer">Contact me</MenuItem>
             </Menu>
-
-
             <Button id="login-button" onClick={() => setModalIsOpen(true)}>Login</Button>
             <Modal
                 isOpen={modalIsOpen}
