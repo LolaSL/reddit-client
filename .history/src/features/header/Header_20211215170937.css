@@ -1,0 +1,139 @@
+/* * {
+  box-sizing: border-box;
+} */
+.header {
+  display: inline-flex;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+  padding: var(--spacing-1);
+  font-family: "Kanit", Courier, sans-serif;
+  background-color: var(--color-background);
+  height: var(--spacing-5);
+}
+
+.searchbar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: var(--spacing-10);
+  margin: var(--spacing-1);
+}
+input {
+  width: var(--spacing-6);
+  height: var(--spacing-5);
+  padding: 0.5rem 0.6rem;
+  border: var(--spacing-0) solid hsl(263, 6%, 43%);
+  background-color: #e7e4e4;
+  font-family: "Kanit", Courier, sans-serif;
+  outline: none;
+  background-color: var(--color-background);
+  font-size: var(--spacing-2);
+}
+
+#btn {
+  float: left;
+  padding: 1rem;
+  width: var(--spacing-6);
+  height: var(--spacing-6);
+  cursor: pointer;
+  text-align: center;
+  font-size: var(--spacing-3);
+  font-weight: 600;
+  border: none;
+  font-family: "Kanit", Courier, sans-serif;
+  background-color: var(--color-text-secondary);
+  color: var(--color-text-invert);
+}
+@media only screen and (min-width: 280px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing-0) var(--spacing-1);
+    font-family: "Kanit", Courier, sans-serif;
+    background-color: var(--color-background);
+  }
+  input {
+    width: var(--spacing-6);
+    height: var(--spacing-3);
+    padding: var(--spacing-0);
+  }
+  #btn {
+    float: left;
+    width: var(--spacing-3);
+    height: var(--spacing-3);
+    cursor: pointer;
+    font-size: var(--spacing-2);
+    font-weight: 600;
+    border: none;
+    padding: var(--spacing-0);
+  }
+}
+@media only screen and (max-width: 415px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing-1) var(--spacing-3);
+    font-family: "Kanit", Courier, sans-serif;
+    background-color: var(--color-background);
+  }
+  input {
+    width: 100%;
+    height: var(--spacing-3);
+    padding-left: var(--spacing-2);
+    border: var(--spacing-0) solid hsl(263, 6%, 43%);
+    background-color: #e7e4e4;
+    font-family: "Kanit", Courier, sans-serif;
+    outline: none;
+    background-color: var(--color-background);
+    display: flex;
+    font-size: var(--spacing-2);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Kanit", Courier, sans-serif;
+    background-color: var(--color-background);
+    width: 100%;
+  }
+  .searchbar {
+    width: 100%;
+  }
+  input {
+    width: 100%;
+    height: var(--spacing-3);
+    padding-left: var(--spacing-2);
+    border: var(--spacing-0) solid hsl(263, 6%, 43%);
+    background-color: #e7e4e4;
+    font-family: "Kanit", Courier, sans-serif;
+    outline: none;
+    background-color: var(--color-background);
+    display: flex;
+    font-size: var(--spacing-2);
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 2200px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Kanit", Courier, sans-serif;
+    background-color: var(--color-background);
+    width: 100%;
+  }
+  input {
+    width: 100%;
+    height: var(--spacing-3);
+    padding-left: var(--spacing-2);
+    border: var(--spacing-0) solid hsl(263, 6%, 43%);
+    background-color: #e7e4e4;
+    font-family: "Kanit", Courier, sans-serif;
+    outline: none;
+    background-color: var(--color-background);
+    display: flex;
+    font-size: var(--spacing-2);
+  }
+}

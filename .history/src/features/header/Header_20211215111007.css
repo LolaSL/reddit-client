@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+.header {
+  display: flex;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+  padding: var(--spacing-1) var(--spacing-3);
+  font-family: "Kanit", Courier, sans-serif;
+  background-color: var(--color-background);
+  height: var(--spacing-5);
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: var(--spacing-8);
+  margin: var(--spacing-2) var(--spacing-2);
+}
+input {
+  min-width: 600px;
+  height: var(--spacing-4);
+  padding: var(--spacing-1) var(--spacing-2);
+  padding-left: var(--spacing-4);
+  border: var(--spacing-0) solid hsl(263, 6%, 43%);
+  background-color: #e7e4e4;
+  font-family: "Kanit", Courier, sans-serif;
+  outline: none;
+  background-color: var(--color-background);
+  display: flex;
+  font-size: var(--spacing-2);
+}
+
+#btn {
+  float: left;
+  width: var(--spacing-4);
+  height: var(--spacing-4);
+  cursor: pointer;
+  font-size: var(--spacing-2);
+  font-weight: 600;
+  border: none;
+  padding: var(--spacing-1);
+  font-family: "Kanit", Courier, sans-serif;
+  background-color: var(--color-text-secondary);
+  color: var(--color-text-invert);
+}
+@media only screen and (min-width: 280px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing-0) var(--spacing-1);
+    font-family: "Kanit", Courier, sans-serif;
+    background-color: var(--color-background);
+  }
+  .searchbar {
+    width: auto;
+  }
+  input {
+    width: 100%;
+    height: var(--spacing-3);
+    padding-right: var(--spacing-3);
+    padding-left: var(--spacing-5);
+    border: var(--spacing-0) solid hsl(263, 6%, 43%);
+    background-color: #e7e4e4;
+    font-family: "Kanit", Courier, sans-serif;
+    outline: none;
+    background-color: var(--color-background);
+    display: flex;
+    font-size: var(--spacing-2);
+  }
+  #btn {
+    float: left;
+    width: var(--spacing-3);
+    height: var(--spacing-3);
+    cursor: pointer;
+    font-size: var(--spacing-2);
+    font-weight: 600;
+    border: none;
+    padding: var(--spacing-0);
+    font-family: "Kanit", Courier, sans-serif;
+    background-color: var(--color-text-secondary);
+    color: var(--color-text-invert);
+  }
+}
+@media only screen and (max-width: 450px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing-1) var(--spacing-3);
+    font-family: "Kanit", Courier, sans-serif;
+    background-color: var(--color-background);
+  }
+  input {
+    width: 100%;
+    height: var(--spacing-3);
+    padding-right: var(--spacing-3);
+    padding-left: var(--spacing-5);
+    border: var(--spacing-0) solid hsl(263, 6%, 43%);
+    background-color: #e7e4e4;
+    font-family: "Kanit", Courier, sans-serif;
+    outline: none;
+    background-color: var(--color-background);
+    display: flex;
+    font-size: var(--spacing-2);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Kanit", Courier, sans-serif;
+    background-color: var(--color-background);
+    width: 100%;
+  }
+  .searchbar {
+    width: 100%;
+  }
+  input {
+    width: 100%;
+    height: var(--spacing-3);
+    padding-right: var(--spacing-3);
+    padding-left: var(--spacing-5);
+    border: var(--spacing-0) solid hsl(263, 6%, 43%);
+    background-color: #e7e4e4;
+    font-family: "Kanit", Courier, sans-serif;
+    outline: none;
+    background-color: var(--color-background);
+    display: flex;
+    font-size: var(--spacing-2);
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Kanit", Courier, sans-serif;
+    background-color: var(--color-background);
+    width: 100%;
+  }
+  input {
+    width: 100%;
+    height: var(--spacing-3);
+    padding-right: var(--spacing-3);
+    padding-left: var(--spacing-5);
+    border: var(--spacing-0) solid hsl(263, 6%, 43%);
+    background-color: #e7e4e4;
+    font-family: "Kanit", Courier, sans-serif;
+    outline: none;
+    background-color: var(--color-background);
+    display: flex;
+    font-size: var(--spacing-2);
+  }
+}

@@ -1,0 +1,72 @@
+.dashboard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color-button);
+  font-weight: normal;
+  padding: var(--spacing-1) var(--spacing-3);
+}
+#basic-menu {
+  display: block;
+}
+#basic-button,
+#close-button,
+#login-button {
+  font-family: "Kanit", Courier, sans-serif;
+  font-weight: 600;
+  color: var(--color-text-body);
+}
+
+#close-button {
+  display: block;
+  margin: var(--spacing-2) auto;
+}
+
+#basic-button:hover {
+  font-family: "Kanit", Courier, sans-serif;
+  font-weight: 600;
+  background-color: var(--color-text-secondary);
+  color: var(--color-text-invert);
+}
+
+#close-button:hover {
+  font-family: "Kanit", Courier, sans-serif;
+  font-weight: 600;
+  background-color: var(--color-text-secondary);
+  color: var(--color-text-invert);
+}
+
+#login-button:hover {
+  font-family: "Kanit", Courier, sans-serif;
+  font-weight: 600;
+  background-color: var(--color-text-secondary);
+  color: var(--color-text-invert);
+}
+@media only screen and (min-width: 280px) and (max-width: 414px) {
+  .dashboard {
+    padding: var(--spacing-0);
+    display: inline-block;
+  }
+  #basic-button,
+  #login-button {
+    padding: var(--spacing-0);
+    font-size: 0.6rem;
+    font-weight: 600;
+    margin-left: 0;
+  }
+
+  #close-button {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 415px) and (max-width: 768px) {
+  .dashboard {
+    padding: var(--spacing-0) var(--spacing-2);
+  }
+
+  #close-button {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
