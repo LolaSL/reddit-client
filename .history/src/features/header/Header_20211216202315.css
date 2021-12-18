@@ -1,0 +1,160 @@
+.header {
+  display: inline-flex;
+  position: fixed;
+  z-index: 15;
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+  padding: var(--spacing-1);
+  font-family: "Kanit", Courier, sans-serif;
+  background-color: var(--color-header);
+  height: var(--spacing-5);
+  transition: box-shadow 0.1s ease-in;
+  margin-bottom: 1rem;
+  box-shadow: var(--box-shadow-1);
+}
+.header:hover {
+  box-shadow: var(--box-shadow);
+}
+.searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  box-sizing: border-box;
+}
+input[type="text"] {
+  /* margin: auto; */
+  width: auto;
+  height: var(--spacing-5);
+  float: left;
+  height: auto;
+  padding-left: 1rem;
+  border: var(--spacing-0) solid hsl(263, 6%, 43%);
+  font-family: "Kanit", Courier, sans-serif;
+  outline: none;
+  background-color: var(--color-foreground);
+  font-size: var(--spacing-2);
+}
+.header #btn {
+  /* position: relative; */
+  padding: var(--spacing-1);
+  height: 2.1rem;
+  width: 2.1rem;
+  cursor: pointer;
+  align-items: center;
+  font-weight: 600;
+  border: none;
+  font-family: "Kanit", Courier, sans-serif;
+  background-color: var(--color-text-secondary);
+  color: var(--color-text-invert);
+  display: inline-block;
+  margin-left: 15px;
+}
+
+#button-subreddit {
+  display: none;
+  float: left;
+  right: 1rem;
+  top: 20%;
+  z-index: 2;
+  font-size: 1.3rem;
+  color: var(--color-foreground);
+  background-color: var(--color-logout);
+  border: 1px solid black;
+  border-radius: var(--radius);
+  margin: var(--spacing-1);
+}
+@media only screen and (min-width: 280px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing-0) var(--spacing-1);
+    font-family: "Kanit", Courier, sans-serif;
+  }
+  input {
+    width: 50%;
+    height: var(--spacing-3);
+    padding: var(--spacing-0);
+  }
+  #btn {
+    float: left;
+    width: var(--spacing-3);
+    height: var(--spacing-3);
+    cursor: pointer;
+    font-size: var(--spacing-2);
+    font-weight: 600;
+    border: none;
+    padding: var(--spacing-0);
+  }
+
+  #button-subreddit {
+    display: block;
+  }
+}
+@media only screen and (max-width: 415px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing-1) var(--spacing-3);
+  }
+  input {
+    /* width: 100%;
+    height: var(--spacing-3); */
+    padding-left: var(--spacing-2);
+    border: var(--spacing-0) solid hsl(263, 6%, 43%);
+    font-family: "Kanit", Courier, sans-serif;
+    outline: none;
+    background-color: var(--color-background);
+    display: flex;
+    font-size: var(--spacing-2);
+  }
+  #button-subreddit {
+    display: block;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .searchbar {
+    width: 100%;
+  }
+  input {
+    /* width: 100%;
+    height: var(--spacing-3); */
+    padding-left: var(--spacing-2);
+    border: var(--spacing-0) solid hsl(263, 6%, 43%);
+    font-family: "Kanit", Courier, sans-serif;
+    outline: none;
+    background-color: var(--color-background);
+    display: flex;
+    font-size: var(--spacing-2);
+  }
+  #button-subreddit {
+    display: block;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 2200px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  input {
+    /* width: auto;
+    height: var(--spacing-3); */
+    padding-left: var(--spacing-2);
+    border: var(--spacing-0) solid hsl(263, 6%, 43%);
+    font-family: "Kanit", Courier, sans-serif;
+    outline: none;
+    background-color: var(--color-background);
+    display: flex;
+    font-size: var(--spacing-2);
+  }
+  #button-subreddit {
+    display: none;
+  }
+}

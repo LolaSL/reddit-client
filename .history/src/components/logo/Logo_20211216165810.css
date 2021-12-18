@@ -1,0 +1,42 @@
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 5;
+}
+
+.logo img {
+  max-width: var(--spacing-4);
+  max-height: var(--spacing-4);
+  margin-right: var(--spacing-2);
+}
+
+#header-title {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Kanit", Courier, sans-serif;
+  color: var(--color-text-body);
+  margin-right: var(--spacing-4);
+}
+@media only screen and (min-width: 280px) and (max-width: 415px) {
+  img {
+    width: 80%;
+    margin-right: auto;
+  }
+  #header-title {
+    font-size: var(--spacing-1);
+    margin-right: var(--spacing-3);
+  }
+  .logo img {
+    max-width: var(--spacing-2);
+    max-height: var(--spacing-2);
+    margin-right: var(--spacing-0);
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  img {
+    width: 100%;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,169 @@
+.login {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  min-width: var(--spacing-6);
+  height: var(--spacing-8);
+  align-items: center;
+  font-family: "Kanit", Courier, sans-serif;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+#login-title {
+  margin-bottom: var(--spacing-2);
+  padding-bottom: var(--spacing-2);
+  text-align: center;
+  font-weight: bold;
+  font-size: var(--spacing-4);
+  text-transform: uppercase;
+}
+p {
+  padding: 0.5rem;
+  text-transform: uppercase;
+  font-family: "Kanit", Courier, sans-serif;
+}
+.login-form > #form-input-size {
+  min-width: var(--spacing-7);
+  padding: var(--spacing-3) 0;
+  padding-left: var(--spacing-2);
+  margin-bottom: var(--spacing-1);
+  outline: none;
+  border: 1px solid var(--color-text-header);
+  font-family: "Kanit", Courier, sans-serif;
+  border-radius: var(--radius);
+  font-size: var(--spacing-2);
+  background-color: var(--color-foreground);
+}
+#submit-button {
+  padding: var(--spacing-2);
+  margin-top: var(--spacing-1);
+  border: none;
+  color: var(--color-text-body);
+  font-size: var(--spacing-3);
+  font-family: "Kanit", Courier, sans-serif;
+  border-radius: var(--radius);
+  font-weight: 600;
+  margin-bottom: var(--spacing-2);
+  text-transform: uppercase;
+}
+#submit-button:hover {
+  font-family: "Kanit", Courier, sans-serif;
+  font-weight: 600;
+  background-color: var(--color-text-secondary);
+  color: var(--color-text-invert);
+}
+@media only screen and (max-width: 280px) {
+  .login {
+    min-width: 40%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    display: block;
+    margin: var(--spacing-3);
+    padding: var(--spacing-0);
+  }
+  #login-title {
+    margin-bottom: var(--spacing-1);
+    padding-bottom: var(--spacing-1);
+    text-align: center;
+    font-weight: bold;
+    font-size: var(--spacing-2);
+  }
+  .login-form > input {
+    padding: var(--spacing-2);
+    min-width: 70%;
+    outline: none;
+    border: 1px solid var(--color-text-header);
+    font-family: "Kanit", Courier, sans-serif;
+    border-radius: var(--radius);
+    font-size: 0.75rem;
+  }
+  #submit-button {
+    min-width: 70%;
+    color: var(--color-text-body);
+    font-size: var(--spacing-2);
+    align-items: center;
+    text-align: center;
+    display: block;
+  }
+  #submit-button:hover {
+    font-family: "Kanit", Courier, sans-serif;
+    font-weight: 600;
+    background-color: var(--color-text-secondary);
+    color: var(--color-text-invert);
+  }
+}
+@media only screen and (max-width: 411px) {
+  .login {
+    min-width: 70%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    display: block;
+    margin: var(--spacing-2);
+    padding: var(--spacing-0);
+  }
+  #login-title {
+    margin-bottom: var(--spacing-1);
+    padding-bottom: var(--spacing-1);
+    text-align: center;
+    font-weight: bold;
+    font-size: var(--spacing-2);
+  }
+  .login-form > input {
+    padding: var(--spacing-2);
+    min-width: 70%;
+    outline: none;
+    border: 1px solid var(--color-text-header);
+    font-family: "Kanit", Courier, sans-serif;
+    border-radius: var(--radius);
+    font-size: 0.75rem;
+  }
+  #submit-button {
+    padding: var(--spacing-2);
+    min-width: 70%;
+    color: var(--color-text-body);
+    font-size: var(--spacing-2);
+    text-transform: uppercase;
+    align-items: center;
+    text-align: center;
+    display: block;
+  }
+  #submit-button:hover {
+    font-family: "Kanit", Courier, sans-serif;
+    font-weight: 600;
+    background-color: var(--color-text-secondary);
+    color: var(--color-text-invert);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .login {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .login-form > input {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .login {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 2000px) {
+  .login {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .login-form > input {
+    width: 100%;
+  }
+}
