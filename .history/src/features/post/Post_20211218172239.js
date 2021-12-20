@@ -118,13 +118,12 @@ const Post = (props) => {
                         </button>
                     </div>
                     <div className="post-container">
-                        <div id="container">
-                            <h2 className="post-title">{post.title}</h2>
+                        <h2 className="post-title">{post.title}</h2>
 
-                            <div className="post-image-container">
-                                <img src={post.url} alt="" className="post-image" />
-                            </div>
+                        <div className="post-image-container">
+                            <img src={post.url} alt="" className="post-image" />
                         </div>
+
                         <div className="post-details">
                             <span className="author-details">
                                 <Avatar name={post.author} />

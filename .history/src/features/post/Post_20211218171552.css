@@ -1,18 +1,12 @@
 article {
-  width: 72%;
-  margin: 0;
+  width: 73%;
+  margin: var(--spacing-2);
   padding: var(--spacing-1);
   border-radius: var(--radius-2);
 }
-article:first-child {
-  width: 72%;
-  margin-top: 4rem;
-  padding: var(--spacing-1);
-  border-radius: var(--radius-2);
-}
+
 .post-wrapper {
   display: flex;
-  width: 100%;
   flex-wrap: wrap;
   margin: 0;
 }
@@ -27,7 +21,6 @@ article:first-child {
   padding-top: var(--spacing-1);
   font-size: var(--spacing-2);
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: space-between;
   align-items: center;
 }
@@ -39,40 +32,31 @@ article:first-child {
 
 .post-image-container {
   width: 100%;
-  height: auto;
-  display: flex;
-  /* flex-wrap: wrap; */
   overflow: hidden;
   border-radius: var(--radius-2);
 }
-#container {
-  width: auto;
-  display: flex;
-  flex-direction: column;
-}
+
 .post-image {
-  max-width: 100%;
-  max-height: 70vh;
+  width: 100%;
+  height: auto;
   margin: var(--spacing-2);
   border-radius: var(--radius-2);
   overflow: hidden;
-  background-size: cover;
-  text-align: center;
-  align-items: center;
 }
 
 .post-title {
   margin-left: var(--spacing-3);
   color: var(--color-text-header);
-  font-size: var(--spacing-3);
-  margin-top: 1rem;
-  word-break: break-word;
+  font-size: var(--spacing-2);
 }
 
 .post-votes-container {
   margin: var(--spacing-2);
   padding: var(--spacing-2);
   float: right;
+}
+
+.post-votes-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -143,42 +127,23 @@ article:first-child {
 .showing-comments {
   color: var(--color-branding);
 }
-@media screen and (min-width: 278px) and (max-width: 450px) {
+@media screen and (device-width: 280px) {
   article {
-    width: 420px;
-  }
-  article:first-child {
-    width: 420px;
+    width: 100%;
   }
   .post-wrapper {
     display: flex;
-    width: max-content;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
   }
   .post-container {
-    width: 80%;
+    width: 100%;
     margin: var(--spacing-0);
   }
-  .post-image-container {
-    width: 100%;
+  .post-image-container.post-image {
+    max-width: 100%;
     height: auto;
-  }
-  #container {
-    display: flex;
-    flex-direction: column;
-    width: 360px;
-  }
-  .post-image {
-    width: 360px;
-    height: auto;
-    margin: var(--spacing-2);
-    border-radius: var(--radius-2);
     overflow: hidden;
     background-size: cover;
-  }
-  .post-title {
-    margin-left: var(--spacing-2);
-    font-size: 1rem;
   }
   .post-details {
     margin-top: var(--spacing-0);
@@ -203,30 +168,7 @@ article:first-child {
     font-weight: 100;
   }
 }
-@media screen and (min-width: 451px) and (max-width: 768px) {
-  article {
-    width: 750px;
-    margin: var(--spacing-1);
-    padding: var(--spacing-1);
-    border-radius: var(--radius-2);
-  }
-
-  .post-wrapper {
-    display: flex;
-    width: max-content;
-    /* flex-wrap: wrap; */
-  }
-  .post-container {
-    width: 90%;
-    margin: var(--spacing-2);
-  }
-  .post-image-container.post-image {
-    width: 100%;
-    height: auto;
-  }
-}
-/* @media screen and (device-width: 560px) {
-
+@media screen and (device-width: 412px) {
   .post-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -241,10 +183,15 @@ article:first-child {
     overflow: hidden;
     background-size: auto;
   }
-} */
-/* @media only screen and (min-width: 769px) {
+}
+@media screen and (device-width: 560px) {
+  .post-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .post-container {
-    width: 100%;
+    width: 90%;
+    margin: var(--spacing-2);
   }
   .post-image-container.post-image {
     max-width: 100%;
@@ -252,8 +199,8 @@ article:first-child {
     overflow: hidden;
     background-size: auto;
   }
-} */
-/* @media only screen and (min-width: 769px) and (max-width: 1024px) {
+}
+@media only screen and (max-width: 768px) {
   .post-container {
     width: 100%;
   }
@@ -264,7 +211,7 @@ article:first-child {
     background-size: auto;
   }
 }
-@media only screen and (min-width: 1025px) and (max-width: 2200px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   .post-container {
     width: 100%;
   }
@@ -274,4 +221,15 @@ article:first-child {
     overflow: hidden;
     background-size: auto;
   }
-} */
+}
+@media only screen and (min-width: 1025) and (max-width: 1440) {
+  .post-container {
+    width: 100%;
+  }
+  .post-image-container.post-image {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-size: auto;
+  }
+}

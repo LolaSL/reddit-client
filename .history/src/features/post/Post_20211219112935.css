@@ -1,20 +1,15 @@
 article {
-  width: 72%;
-  margin: 0;
+  width: 70%;
+  margin: 1em 0.5rem;
   padding: var(--spacing-1);
   border-radius: var(--radius-2);
 }
-article:first-child {
-  width: 72%;
-  margin-top: 4rem;
-  padding: var(--spacing-1);
-  border-radius: var(--radius-2);
-}
+
 .post-wrapper {
   display: flex;
   width: 100%;
-  flex-wrap: wrap;
-  margin: 0;
+  /* flex-wrap: wrap; */
+  margin: auto 0;
 }
 
 .post-container {
@@ -27,7 +22,6 @@ article:first-child {
   padding-top: var(--spacing-1);
   font-size: var(--spacing-2);
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: space-between;
   align-items: center;
 }
@@ -40,7 +34,7 @@ article:first-child {
 .post-image-container {
   width: 100%;
   height: auto;
-  display: flex;
+  /* display: flex; */
   /* flex-wrap: wrap; */
   overflow: hidden;
   border-radius: var(--radius-2);
@@ -64,9 +58,8 @@ article:first-child {
 .post-title {
   margin-left: var(--spacing-3);
   color: var(--color-text-header);
-  font-size: var(--spacing-3);
+  font-size: var(--spacing-2);
   margin-top: 1rem;
-  word-break: break-word;
 }
 
 .post-votes-container {
@@ -143,12 +136,9 @@ article:first-child {
 .showing-comments {
   color: var(--color-branding);
 }
-@media screen and (min-width: 278px) and (max-width: 450px) {
+@media screen and (min-width: 280px) and (max-width: 415px) {
   article {
-    width: 420px;
-  }
-  article:first-child {
-    width: 420px;
+    width: 230%;
   }
   .post-wrapper {
     display: flex;
@@ -166,10 +156,9 @@ article:first-child {
   #container {
     display: flex;
     flex-direction: column;
-    width: 360px;
   }
   .post-image {
-    width: 360px;
+    max-width: 100%;
     height: auto;
     margin: var(--spacing-2);
     border-radius: var(--radius-2);
@@ -203,9 +192,9 @@ article:first-child {
     font-weight: 100;
   }
 }
-@media screen and (min-width: 451px) and (max-width: 768px) {
+@media screen and (min-width: 416px) and (max-width: 768px) {
   article {
-    width: 750px;
+    width: 95%;
     margin: var(--spacing-1);
     padding: var(--spacing-1);
     border-radius: var(--radius-2);
@@ -213,7 +202,6 @@ article:first-child {
 
   .post-wrapper {
     display: flex;
-    width: max-content;
     /* flex-wrap: wrap; */
   }
   .post-container {
@@ -221,8 +209,10 @@ article:first-child {
     margin: var(--spacing-2);
   }
   .post-image-container.post-image {
-    width: 100%;
+    max-width: 100%;
     height: auto;
+    overflow: hidden;
+    background-size: cover;
   }
 }
 /* @media screen and (device-width: 560px) {

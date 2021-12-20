@@ -62,14 +62,14 @@ p {
   margin: 0;
 }
 
-/* main {
+main {
   display: flex;
   justify-content: space-between;
   background-color: #d0d0d0;
   padding: 3%;
   margin-top: 80px;
-  flex-direction: row;
-} */
+  flex-direction: column;
+}
 
 /* @media only screen and (max-width: 640px) {
   main {

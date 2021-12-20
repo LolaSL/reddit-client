@@ -118,7 +118,7 @@ const Post = (props) => {
                         </button>
                     </div>
                     <div className="post-container">
-                        <div id="container">
+                        <div>
                             <h2 className="post-title">{post.title}</h2>
 
                             <div className="post-image-container">
