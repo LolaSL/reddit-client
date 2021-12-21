@@ -1,0 +1,136 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kanit", Courier, sans-serif;
+  text-transform: uppercase;
+}
+
+.error button {
+  color: var(--color-text-body);
+  border: none;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  padding: var(--spacing-2) var(--spacing-4);
+  cursor: pointer;
+  font-family: "Kanit", Courier, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.error button:hover {
+  font-family: "Kanit", Courier, sans-serif;
+  font-weight: 600;
+  background-color: var(--color-text-secondary);
+  color: var(--color-text-invert);
+}
+.error h2 {
+  color: var(--color-alert);
+  font-size: 3rem;
+}
+@media only screen and (min-width: 280px) and (max-width: 415px) {
+  .error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Kanit", Courier, sans-serif;
+    margin-top: 5rem;
+  }
+  .error button {
+    color: var(--color-text-body);
+    border: none;
+    border: none;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    padding: var(--spacing-1) var(--spacing-3);
+    cursor: pointer;
+    font-family: "Kanit", Courier, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .error h2 {
+    color: var(--color-alert);
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 416px) and (max-width: 768px) {
+  .error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Kanit", Courier, sans-serif;
+    margin-top: 5.5rem;
+  }
+  .error button {
+    color: var(--color-text-body);
+    border: none;
+    border: none;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    padding: var(--spacing-1) var(--spacing-3);
+    cursor: pointer;
+    font-family: "Kanit", Courier, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .error h2 {
+    color: var(--color-alert);
+    font-size: 1.25rem;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Kanit", Courier, sans-serif;
+    margin-top: 6rem;
+  }
+  .error button {
+    color: var(--color-text-body);
+    border: none;
+    border: none;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    padding: var(--spacing-1) var(--spacing-3);
+    cursor: pointer;
+    font-family: "Kanit", Courier, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .error h2 {
+    color: var(--color-alert);
+    font-size: 1.75rem;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1140px) {
+  .error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Kanit", Courier, sans-serif;
+    /* margin-top: 10rem; */
+  }
+  .error button {
+    color: var(--color-text-body);
+    border: none;
+    border: none;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    padding: var(--spacing-1) var(--spacing-3);
+    cursor: pointer;
+    font-family: "Kanit", Courier, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .error h2 {
+    color: var(--color-alert);
+    font-size: 1.75rem;
+  }
+}
