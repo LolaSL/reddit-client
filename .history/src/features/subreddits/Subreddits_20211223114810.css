@@ -1,0 +1,124 @@
+body .subreddit-card {
+  padding: var(--spacing-2);
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  padding-top: var(--spacing-2);
+  margin-top: 4.5rem;
+  overflow-y: scroll;
+  font-family: "Kanit", Courier, sans-serif;
+  font-size: var(--spacing-3);
+  background-color: var(--color-foreground);
+}
+#main {
+  display: block;
+  align-items: stretch;
+  height: 100%;
+  width: 20%;
+}
+.subreddit-card h2 {
+  color: var(--color-text-header);
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px var(--color-text-secondary);
+}
+
+.subreddit-card button {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  color: var(--color-text-body);
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+  padding: var(--spacing-2);
+  border-radius: var(--radius);
+  font-family: "Kanit", Courier, sans-serif;
+  font-size: var(--spacing-2);
+}
+
+.selected-subreddit button {
+  color: var(--color-branding) !important;
+  font-family: "Kanit", Courier, sans-serif;
+  font-family: "Kanit", Courier, sans-serif;
+}
+
+.selected-subreddit {
+  border-left: var(--spacing-0) solid var(--color-branding);
+  background: var(--color-branding-transparent);
+  font-family: "Kanit", Courier, sans-serif;
+}
+
+.subreddit-card button:hover {
+  background: var(--color-on-hover);
+}
+
+.subreddits-list {
+  list-style: none;
+  word-break: break-word;
+  padding: var(--spacing-1);
+  font-family: "Kanit", Courier, sans-serif;
+}
+
+.subreddit-icon {
+  height: var(--spacing-3);
+  width: var(--spacing-3);
+  border-radius: 50%;
+  margin-right: var(--spacing-1);
+}
+@media only screen and (min-width: 280px) and (max-width: 768px) {
+  body .subreddit-card {
+    width: 70%;
+  }
+  #main {
+    display: none;
+    align-items: stretch;
+    /* height: 100%;
+    width: 16%; */
+  }
+  .subreddit-card h2 {
+    color: var(--color-text-header);
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .subreddit-card {
+    display: block;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  #main {
+    display: block;
+  }
+  .subreddit-card {
+    width: 75%;
+    height: 100%;
+    width: 16%;
+  }
+  .subreddit-card h2 {
+    color: var(--color-text-header);
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 3000px) {
+  #main {
+    display: block;
+    height: 100%;
+    width: 16%;
+  }
+  .subreddit-card {
+    width: 100%;
+  }
+  .subreddit-card h2 {
+    color: var(--color-text-header);
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+}
