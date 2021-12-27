@@ -30,15 +30,13 @@ article:first-child {
   margin-top: 0;
   border-top: 2px solid var(--color-border);
   padding-top: var(--spacing-1);
+  font-size: var(--spacing-2);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   width: 95%;
   padding-left: 1rem;
-}
-.post-details span {
-  font-size: 1rem;
 }
 
 .post-details .author-username {
@@ -150,15 +148,14 @@ article:first-child {
   display: flex;
   align-items: center;
   justify-content: baseline;
-  font-size: 1rem;
+  font-size: 0.7rem;
 }
-.author-details span {
-  font-size: 1rem;
-}
+
 .showing-comments {
   color: var(--color-branding);
 }
-.author-fame {
+span.author-fame {
+  font-size: normall;
   font-weight: 600;
   color: var(--color-branding);
 }
@@ -191,7 +188,7 @@ article:first-child {
   #container {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
   }
   .post-image {
     width: 90%;
@@ -206,7 +203,7 @@ article:first-child {
   }
   .post-title {
     margin: var(--spacing-2) auto;
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     margin-top: 0.5rem;
     word-break: break-word;
     padding-left: 0.5rem;
@@ -216,6 +213,7 @@ article:first-child {
     border-top: 2px solid var(--color-border);
     padding-top: var(--spacing-1);
     padding-right: var(--spacing-1);
+    font-size: var(--spacing-1);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -224,9 +222,6 @@ article:first-child {
     width: 97%;
     height: auto;
   }
-  .post-details span {
-    font-size: 0.4rem;
-  }
   .author-details {
     display: flex;
     flex-wrap: wrap;
@@ -234,8 +229,9 @@ article:first-child {
     font-weight: var(--spacing-1);
     justify-content: baseline;
   }
-  .author-details span {
-    font-size: 0.5rem;
+  span.author-username {
+    font-size: small;
+    font-weight: 100;
   }
 }
 .post-votes-container {
@@ -246,14 +242,14 @@ article:first-child {
   align-items: center;
   margin: 0;
 }
-@media screen and (min-width: 451px) and (max-width: 768px) and (max-height: 851px) {
+@media screen and (min-width: 451px) and (max-width: 960px) and (max-height: 851px) {
   article {
-    min-width: 90%;
+    min-width: 53%;
     height: auto;
     align-items: center;
   }
   article:first-child {
-    min-width: 90%;
+    min-width: 53%;
     height: auto;
     align-items: center;
   }
@@ -298,6 +294,7 @@ article:first-child {
     border-top: 2px solid var(--color-border);
     padding-top: var(--spacing-1);
     padding-right: var(--spacing-1);
+    font-size: var(--spacing-2);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -305,9 +302,7 @@ article:first-child {
     font-weight: 300;
     width: 100%;
   }
-  .post-details span {
-    font-size: 0.5rem;
-  }
+
   .author-details {
     display: flex;
     align-items: center;
@@ -316,10 +311,10 @@ article:first-child {
     font-weight: var(--spacing-2);
     justify-content: baseline;
   }
-  .author-details span {
-    font-size: 0.7rem;
+  span.author-username {
+    font-size: small;
+    font-weight: 300;
   }
-
   .post-votes-container {
     margin: 0;
     padding: var(--spacing-2);
@@ -329,14 +324,14 @@ article:first-child {
     align-items: center;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1025px) and (max-height: 1500px) {
+@media screen and (min-width: 961px) and (max-width: 1440px) and (max-height: 1500px) {
   article {
-    min-width: 53%;
+    min-width: 55%;
     height: auto;
     align-items: center;
   }
   article:first-child {
-    min-width: 53%;
+    min-width: 55%;
     height: auto;
     align-items: center;
   }
@@ -347,6 +342,7 @@ article:first-child {
   }
   .post-container {
     max-width: 100%;
+    /* margin: var(--spacing-2) auto; */
   }
   .post-image-container {
     max-width: 100%;
@@ -380,28 +376,24 @@ article:first-child {
     border-top: 2px solid var(--color-border);
     padding-top: var(--spacing-2);
     padding-right: var(--spacing-2);
+    font-size: var(--spacing-2);
     display: flex;
     flex-wrap: wrap;
-    justify-content: baseline;
+    justify-content: space-around;
     align-items: center;
     font-weight: 300;
-    width: 95%;
-  }
-  .post-details span {
-    font-size: 0.7rem;
+    width: 90%;
   }
   .author-details {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     font-weight: var(--spacing-2);
+    justify-content: baseline;
     font-size: 0.9rem;
   }
-  .author-details span {
-    font-size: 0.9rem;
-  }
-  span.author-fame {
-    font-size: 0.7rem;
+  span.author-username {
+    font-size: small;
     font-weight: 300;
   }
   .post-votes-container {
@@ -413,7 +405,7 @@ article:first-child {
     margin: 0;
   }
 }
-@media screen and (min-width: 1025px) and (max-width: 3000px) and (max-height: 1800px) {
+@media screen and (min-width: 1441px) and (max-width: 3000px) and (max-height: 1800px) {
   article {
     min-width: 55%;
     height: auto;
@@ -474,9 +466,6 @@ article:first-child {
     justify-content: space-between;
     font-weight: 300;
   }
-  .post-details span {
-    font-size: 1rem;
-  }
   .author-details {
     display: flex;
     align-items: center;
@@ -485,10 +474,10 @@ article:first-child {
     justify-content: baseline;
     font-size: 1rem;
   }
-  .author-details span {
-    font-size: 1rem;
+  span.author-username {
+    font-size: normall;
+    font-weight: 300;
   }
-
   .post-votes-container {
     padding: var(--spacing-1);
     float: left;

@@ -90,12 +90,12 @@
     margin: 0.5rem auto;
     transition: box-shadow 0.1s ease-in;
     border-radius: var(--border-radius);
-    width: 95%;
+    width: 90%;
     height: auto;
     text-transform: none;
   }
   .comment-metadata {
-    width: 95%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

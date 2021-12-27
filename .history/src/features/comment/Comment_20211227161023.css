@@ -55,12 +55,12 @@
     padding: var(--spacing-1) var(--spacing-1);
     transition: box-shadow 0.1s ease-in;
     border-radius: var(--border-radius);
-    width: 90%;
+    width: 100%;
     height: auto;
     text-transform: none;
   }
   .comment-metadata {
-    width: 95%;
+    width: 100%;
     display: flex;
     text-align: justify;
     flex-wrap: wrap;
@@ -84,18 +84,18 @@
   }
 }
 
-@media only screen and (min-width: 450px) and (max-width: 960px) {
+@media only screen and (min-width: 451px) and (max-width: 960px) {
   .comment {
     background: var(--color-comment-background);
     margin: 0.5rem auto;
     transition: box-shadow 0.1s ease-in;
     border-radius: var(--border-radius);
-    width: 95%;
+    width: 100%;
     height: auto;
     text-transform: none;
   }
   .comment-metadata {
-    width: 95%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
