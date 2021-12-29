@@ -52,7 +52,7 @@ export default function Dashboard() {
                 <MenuItem
                     onClick={handleClose}
                     component="a"
-                    href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+                    href="https://www.linkedin.com/in/lola-s-2aba6340-lo/"
                     target="_blank"
                     rel="noopener noreferrer">Linkedin</MenuItem>
                 <MenuItem
