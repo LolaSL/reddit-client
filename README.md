@@ -56,7 +56,10 @@ The user can choose from 25 predefined subreddits of varying categories. For eac
 
 It is possible to filter the posts of a subreddit with the given search box. By clicking on the title of a post, the post can be displayed in a focused modal view. Clicking the up - or downvote button simulates submitting a vote for the respective post (Since the Reddit API is read-only, no votes are actually submitted). Clicking the comments icon opens a selection of user comments for the respective post.
 
-Dashboard includes an option to open a few web links such as Github, Linkedin and Reddit and to login and logout from an application.
+The user can open button Dashboard which includes an option to reach a few websites such as Github (relevant project repository), Linkedin (project author profile) and Reddit; button Login has an option to login user to application.
+Login form is modal form with inputs for each field (name, email and password) and the button Submit wich submites user data. 
+When user submites data user's name is appeared near buttom Logout.
+The button Logout is logouts the user.
 
 ## Available Scripts
 
